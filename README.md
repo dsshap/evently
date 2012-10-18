@@ -20,8 +20,8 @@ Or install it yourself as:
 
 Recording:
 
-  $ rails console
-  Evently.record(user, 'signed up')
+
+  Evently.record(user, 'signed up') <br>
   Evently.record(user, 'enrolled in', subject)
   Evently.record(product, 'sold out')
   
