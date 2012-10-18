@@ -5,8 +5,6 @@ class Event
 
   embeds_many :event_parts
 
-  paginates_per 50
-
 end
 
 class EventPart
