@@ -16,7 +16,7 @@ Or install it yourself as:
 
     $ gem install evently
 
-## Usage
+## Usage:
 
   Evently.record(user, 'signed up')
   Evently.record(user, 'enrolled in', subject)
