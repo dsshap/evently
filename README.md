@@ -20,16 +20,20 @@ Or install it yourself as:
 
 Recording:
 
-  Evently.record(user, 'signed up')
-  Evently.record(user, 'enrolled in', subject)
-  Evently.record(product, 'sold out')
+  $ rails console
+  >> Evently.record(user, 'signed up')
+  >> Evently.record(user, 'enrolled in', subject)
+  >> Evently.record(product, 'sold out')
+  
 
 Fetching:
 
-  Evently.fetch(user)                               # all of a user's events
-  Evently.fetch(user, 'enrolled in', subject)       # events where a user enrolled in a particular subject
-  Evently.fetch(user, subject)                      # all events associated with a user and a particular subject
-  Evently.fetch('signed up')                        # all signup events
+  $ rails console
+  >> Evently.fetch(user)                               # all of a user's events
+  >> Evently.fetch(user, 'enrolled in', subject)       # events where a user enrolled in a particular subject
+  >> Evently.fetch(user, subject)                      # all events associated with a user and a particular subject
+  >> Evently.fetch('signed up')                        # all signup events
+ 
 
 ##Active Admin
 
