@@ -15,6 +15,6 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
   gem.version       = Evently::VERSION
 
-  gem.add_runtime_dependency 'mongoid',     '>= 2.0'
-  gem.add_development_dependency "mongoid-rspec", "~> 1.5.4"
+  gem.add_runtime_dependency 'mongoid',     ['>= 2.0']
+  gem.add_development_dependency "mongoid-rspec", ["= 1.5.4"]
 end
