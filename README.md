@@ -1,6 +1,6 @@
 # Evently
 
-TODO: Write a gem description
+  Event logging apparatus for mongoid. Storing events as they occur in the database. Helpful for data mining on events occuring in an application.
 
 ## Installation
 
@@ -18,7 +18,23 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+  Evently.record(user, 'signed up')
+  Evently.record(user, 'enrolled in', subject)
+  Evently.record(product, 'sold out')
+
+  Evently.fetch(user) # all of a user's events
+  Evently.fetch(user, 'enrolled in', subject) # events where a user enrolled in a particular subject
+  Evently.fetch(user, subject) # all events associated with a user and a particular subject
+  Evently.fetch('signed up') # all signup events
+
+##Active Admin
+
+  <script src="https://gist.github.com/3823102.js?file=application_helper.rb"></script>
+  <script src="https://gist.github.com/3823102.js?file=events.rb"></script>
+
+##Testing
+
+  <script src="https://gist.github.com/3823102.js?file=event_spec.rb"></script>
 
 ## Contributing
 
