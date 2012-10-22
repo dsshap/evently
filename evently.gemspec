@@ -6,7 +6,8 @@ Gem::Specification.new do |gem|
   gem.email         = ["dss.shapiro@gmail.com"]
   gem.description   = %q{Event logging apparatus for mongoid. Storing events as they occur in the database. Helpful for data mining on events occuring in an application. }
   gem.summary       = %q{Event logging and retrieval for mongoid.}
-  gem.homepage      = ""
+  gem.homepage      = "https://github.com/dsshap/evently.git"
+
 
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }

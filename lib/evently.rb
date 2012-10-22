@@ -17,4 +17,12 @@ module Evently
     end
   end
 
+  def self.desc(desc_by)
+    Event.all.desc(desc_by)
+  end
+
+  def self.asc(desc_by)
+    Event.all.asc(desc_by)
+  end
+
 end
