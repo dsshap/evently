@@ -12,7 +12,11 @@ module Evently
       if part.is_a?(Mongoid::Document)
         criteria.where('event_parts.content.class_name' => part.class.name, 'event_parts.content.id' => part.id.to_s)
       else
-        criteria.where('event_parts.content' => part)
+        if part.is_a?(Array)
+          criteria.all_in('event_parts.content' => part)
+        else
+          criteria.where('event_parts.content' => part)
+        end
       end
     end
   end
